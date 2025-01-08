@@ -12,6 +12,18 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Content\Content.mgcb" />
+    <None Remove="Content\MatrixFont.spritefont" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </MonoGameContentReference>
+    <MonoGameContentReference Include="Content\MatrixFont.spritefont">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </MonoGameContentReference>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.1.303" />
     <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
   </ItemGroup>
